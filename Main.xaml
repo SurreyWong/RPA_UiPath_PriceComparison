@@ -1,0 +1,316 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1178,4142" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Price_Camparison" sap:VirtualizedContainerService.HintSize="688,4077" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ShopeePrice" />
+      <Variable x:TypeArguments="x:String" Name="LazadaPrice" />
+      <Variable x:TypeArguments="x:Double" Name="DoubleShopee" />
+      <Variable x:TypeArguments="x:Double" Name="DoubleLazada" />
+      <Variable x:TypeArguments="x:Double" Name="Difference" />
+      <Variable x:TypeArguments="x:String" Name="ProductName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="626,3989" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\wywong\Downloads\price.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,3856" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange DataTable="{x:Null}" Range="{x:Null}" AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="Sheet1" />
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Shopee Malaysia | Free Shipping Across Malaysia" sap:VirtualizedContainerService.HintSize="530,1086" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="842b1486-bb56-44c6-b12e-9ce8585b0390" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,837" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="354,187" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="Grace and Glow">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4261f03d-f196-4630-b05a-41b1d3206422" InformativeScreenshot="9c37473db0b4c63307114331e46ab7fa" Selector="&lt;webctrl tag='INPUT' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="842b1486-bb56-44c6-b12e-9ce8585b0390" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://shopee.com.my/" DesignTimeRectangle="1180, 131, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn btn-solid-primary btn--s btn--inline shopee-searchbar__search-button' aaname='' /&gt;" Guid="54bac7b6-c338-4efd-b21c-88e586ee3f55" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAmCAYAAAB0xJ2ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVGhD7ZrPS5RBGMf9n/JQQh3yD+iUYFFg4iHo1EkhULx1cD1EVJCRhWmWgj9BCSFlC0KzCBNJDftBtG+b0WFT3/d5vs0zuqvLPgcPs6PszsCHhf3OMPP98LI7h7cGVT6CgL1P0MwI4uZ6xOdPVDamo3TNDyuAmRFfqYLyeUxX6VwQQET6xApGOgcBQUAQEAQEAUFAEOBRwMU6UG8K+B3ZzWXwl1Uk3W2IG2r1NWXCu4Dk2jnwz++mMYHfvQKNPgZNPwevvLcH4YU5K0hbWw78CjBXT/zJApu/kNxoKsnpTieQxOD52ZKsXHgVQCO9drOk86qaCzT8YHdOe4uau8arAP62Dl5eVLMCF06Z9omVpeaO8SoAO9ugiSdqdhBeXwYvptXMNX4FbOVAkwNqdhBeXQJ/eKNmrvEqwBYzaFkB8w8gP4Q02a/njvEqgO7ftJvR7Q41F2j+pZ2TXG9Qc9d4FRA3njQXnjXZCNR3q/jSc/kM+PULexi5FBWtKyN+BRjkIoToh90UW//Aax/Nv8Nn+9jL4K9GkBk09Uxd7xrvAiyXToMedYPfpsFLC7ukp5CkWu1TQQ+77KFovE9f75CjEXAI6OldezAavKfmrji2AgQa6gFvfFIzVxxrAT4IAoKAICAICAKCgCBgX8BO01l1YiUiXUsE/B3rx3YVSJCO0rVIgLwskMvlkM1mEUURMplMRSLdpKN0LXpBQoZ8IVaqgXx5APgPHrJflLNBaFsAAAAASUVORK5CYII=" InformativeScreenshot="a73cbaf194facc35ae8a5bc1346ca831.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Shopee Malaysia | Free Shipping Across Malaysia' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'RM'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="842b1486-bb56-44c6-b12e-9ce8585b0390" TextString="[ShopeePrice]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://shopee.com.my/search?keyword=grace%20and%20glow" CVScreenId="bbd59f51-09f3-40d9-8b23-81ce9b360bc8" CvTextArea="560, 646, 59, 15" CvType="AnyWordGroup" DesignTimeRectangle="579, 645, 40, 20" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='main' tag='SPAN' type='' class='font-medium text-base/5 truncate' /&gt;" Guid="98067b56-cc41-4e12-9277-cb53da0428d5" InformativeScreenshot="f184a2345bf118b3b69678079eb95fc0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='grace and glow - Prices and Promotions - Sept 2024 | Shopee Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="bbd59f51-09f3-40d9-8b23-81ce9b360bc8" CvTextArea="558, 623, 172, 16" CvTextArgument="Opium Smooth Deodorant..." CvType="Text" DesignTimeRectangle="559, 623, 171, 16" ElementType="Text" Guid="742f6393-35b3-4f99-9b90-778fefb7444e" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Bundle 2PCS Black Opium…'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="842b1486-bb56-44c6-b12e-9ce8585b0390" TextString="[ProductName]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://shopee.com.my/search?keyword=grace%20and%20glow" DesignTimeRectangle="560, 601, 172, 40" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='main' tag='DIV' type='' class='whitespace-normal line-clamp-2 break-words min-h-[2.5rem] text-sm' /&gt;" Guid="56a97558-c1f0-438a-a71b-ccb7e8ea197d" InformativeScreenshot="8b9cfe0bcd10628f8cb6bdc56a0039b8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='grace and glow - Prices and Promotions - Sept 2024 | Shopee Malaysia' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="d760aa9b-686d-4a16-9a8d-b38cf20f4480" CvTextArea="596, 700, 56, 12" CvTextArgument="97.3k sold" CvType="Text" DesignTimeRectangle="597, 699, 55, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='97.3k sold' parentid='main' tag='DIV' type='' class='truncate text-shopee-black87 text-xs min-h-4' check:innerText='97.3k sold' /&gt;" Guid="fac1ce1d-5c45-4a8f-ae8b-a4d0e260676d" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1616, 876" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIzSURBVFhH5VfLccIwEKUESuCYAdvjEjgTi7iDUAIdJB0kHZAOkg4ogRK4J7ZVAtknr7CMF8vik0vezJsxq7V2Lb1diVEodD4Z62XyUql4SzwYZsmObM/scj/o/GFCAffHwPWzdn/Dh91vCze4VvHn92Ka8hCNpZMyiz/umkRJQRGgXEavbOqgzKJ3TmLLpttAZ9Hcfh2bzqLKam380Dtsuh4FL+8QoRWLeGV8Vbxh0/WAys2k83TMprMgPYzhS/SuVguaRIWllsgTamlMIvsfpDFLDlsDKrYv/RVblfI/EzjVk+Tk4b7Koq0hN6gQctgGkpPILNpJNX7SDb3k1xqQ0e3p50htNh1j/6gzbiqV0CokO3RJ2yNsz/CwW6Iwnjh1iCDumSBw6FZcmAAFpy/MpbEg0jZy2Aa22/URe48tkMbCGHUPK3uI9JH2+g2+hTL9Plj5DS9MAMRtCP5QvUmkLkPRt4dfJqiLkBLCHronY2gJiidlUAIN9yhH21ahEbJ5yxkXFxPUxYUJHGm3hpMQfSwpge6tCkbJOYSlStaYi557BXq3BIhGXD5Bl48zk2gLpZqtJecWPYp3VqBXB4WarkxQF/Yu10NTu1x6naZlhcU9ojV2SqqCJ/i2MCAB04is4lF6EBxaM7pjbZum5OdtUNJpilNsaI/XpvQQGK3ZMM5pUvufwEsxAUwkOd+DuABz2Aa8fOILt+bZ6z0NXnHADKR0FFtAWJLCb0YqY8TgcITR6Bfyfom7XZUwrQAAAABJRU5ErkJggg==" InformativeScreenshot="121d3ac7504a5729f3236875ec1778d1.jpg" Selector="&lt;html app='msedge.exe' title='Shopee Malaysia | Free Shipping Across Malaysia' /&gt;" Title="Shopee Malaysia | Free Shipping Across Malaysia" Url="https://shopee.com.my/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <Sequence sap:VirtualizedContainerService.HintSize="530,1008" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Lazada Malaysia | Fast &amp; Free Shipping" sap:VirtualizedContainerService.HintSize="450,888" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="b64e9f0d-5bee-41a5-9150-b0103643a1b0" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,648" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  q'" EmptyField="True" sap:VirtualizedContainerService.HintSize="354,187" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="Grace and Glow">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9ee01502-87fb-44bf-8fdc-3a566ceac88e" InformativeScreenshot="5d7ffae47fa1160e372b27abf025b353" Selector="&lt;webctrl id='q' tag='INPUT' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SEARCH'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b64e9f0d-5bee-41a5-9150-b0103643a1b0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.lazada.com.my/?bizToken=e3da83170d2c4cc982a189edfae5e870&amp;tokenType=SECONDED_VERIFY_PASS#?" CvElementArea="1050, 193, 49, 47" CvType="Button" DesignTimeRectangle="1052, 194, 45, 45" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='SEARCH' parentid='topActionHeader' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='SEARCH' parentid='topActionHeader' tag='A' type='' class='search-box__button--1oH7' check:innerText='SEARCH' /&gt;" Guid="242d50ba-1894-49a8-a858-3ab2ee662ef7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI6SURBVGhD7ZrPSxVRFMf7Y1yGO10E4aYWbaJ9myJXRovaGFERkZgLhRZBJfRLIkyCIoJ2BaFmYC2lh6JB2g+MF+Wbue+NM6c5l/vV0Q7BvHvrMo/7hQ8Dc84c3ufNnR+L2UMdkM6QqP9oENM401UdzvdQPPPIKFRVgslFkOpK5CBBwjdIkPANEiR8gwQJ3yBBwjdIkNiNujNAyev7lC6+IVIblH6uUfL2MTUnz4n9tiDOJNLleTNSzmZtRjzOBsSJRDI3ZcYRJbMPSd07pferWyeo9eKaqRBl9bU/jrUBsZZQ14+aUfkKunFM7Iku7TMdRK2X42JPOyDWEsn8Uz2Iz4ZUB80nQ7qPE13pE3vKglhLZI26HhSPHhbrRbKf33SvGu8X62VBrCSKS6kxuFfsKZKuvNe9rWdXxXpZECuJ6GKvGZMvkcv7xZ4i6dcl3ducOC3Wy4LYL6f1j3qQuntSrINo+EB+4SjdGw8fFHvKgthf2K9u60HZr3WxDjZr07ovmZ0U6+2AWEvwtcBPZk66ukDx2JEddb69JtMPdJ0TXejZUbcBsZfIUTePU7r2wYzMZVbe6YccXj842fdPesv745FD4pyyIE4kNGe7qfV8lNIvi2b0dvj9iW/BWioPnzkXIog7iQK8pPgf5+dB8cHGP3xr6TkQQf6JxN9wKYL8dwnGlQjiRYJxIYJ4k2AgUtkzAdoVYBDvEjYgQcI3SJDwDRIkfIMECd8gQcIrlf+iYPe3HWZb6XSABNFvfeto64uKsqgAAAAASUVORK5CYII=" InformativeScreenshot="ec6b1bc9bc0a2369da31e773a1468876.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fcart.lazada.com.my%2Fcart%3Fspm%3Da2o4k.homepage.header.dcart.51bc4065EUWXEX%26scm%3D1003.4.icms-zebra-5001421-2591676.OTHER_5196131694_2267351&amp;amp;refer_pv_id=41c649fb60Oe0r' title='Lazada Malaysia | Fast &amp;amp; Free Shipping' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NGetText DisplayName="Get Text 'Grace and'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="b64e9f0d-5bee-41a5-9150-b0103643a1b0" TextString="[LazadaPrice]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.lazada.com.my/tag/grace-and-glow/?spm=a2o4k.homepage.search.d_go&amp;q=grace%20and%20glow&amp;catalog_redirect_tag=true" CVScreenId="895fe49e-504a-4347-b7cf-8cc0ef79f70c" CvTextArea="806, 737, 70, 16" CvType="AnyWordGroup" DesignTimeRectangle="806, 737, 70, 16" DesignTimeScaleFactor="1" ElementType="Text" Guid="fc5a9545-bad0-4276-b0ca-66dd75b23fe8" InformativeScreenshot="ba0f1dc833c9cfc0cf0e4d829292ac1f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.com.my%2Fproducts%2Fgrace-and-glow-new-product-vanilla-velvet-body-mist-perfumed-body-spray-long-lasting-i4206292328-s23834791962.html%3Fc%3D%26channelLpJumpArgs%3D%26clickTrackInfo%3Dquery%25253Agrace%2525*' title='Shop Grace And Glow online | Lazada.com.my' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="895fe49e-504a-4347-b7cf-8cc0ef79f70c" CvTextArea="809, 699, 197, 15" CvTextArgument="9.9 Grace and Glow Black Opium" CvType="Text" DesignTimeRectangle="810, 699, 196, 16" ElementType="Text" Guid="18beac40-21f0-44f6-bafc-5b03a072f8b5" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1616, 876" BrowserType="Edge" IconBase64="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" InformativeScreenshot="a66416cf883a8eb59f0b1cafee28d7e2.jpg" Selector="&lt;html app='msedge.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fcart.lazada.com.my%2Fcart%3Fspm%3Da2o4k.homepage.header.dcart.51bc4065EUWXEX%26scm%3D1003.4.icms-zebra-5001421-2591676.OTHER_5196131694_2267351&amp;amp;refer_pv_id=41c649fb60Oe0r' title='Lazada Malaysia | Fast &amp;amp; Free Shipping' /&gt;" Title="Lazada Malaysia | Fast &amp; Free Shipping" Url="https://www.lazada.com.my/?bizToken=e3da83170d2c4cc982a189edfae5e870&amp;tokenType=SECONDED_VERIFY_PASS#?" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="530,195" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[LazadaPrice]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[LazadaPrice.Replace("RM","")]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Double">[DoubleShopee]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Double">[Double.Parse(ShopeePrice)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Double">[DoubleLazada]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Double">[Double.Parse(LazadaPrice)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:ExcelWriteCell Cell="A2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="530,120" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Sheet1" Text="[ProductName]" />
+            <ui:ExcelWriteCell Cell="C2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="530,120" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Sheet1" Text="[ShopeePrice]" />
+            <ui:ExcelWriteCell Cell="B2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="530,120" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1" Text="[LazadaPrice]" />
+            <If Condition="[DoubleLazada &gt; DoubleShopee]" sap:VirtualizedContainerService.HintSize="530,1027" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,433" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="StrDifference" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ExcelWriteCell Cell="D2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,120" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="Shopee" />
+                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Double">[Difference]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Double">[DoubleLazada - DoubleShopee]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:ExcelWriteCell Cell="E2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Sheet1" Text="[Difference.ToString]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,433" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ExcelWriteCell Cell="D2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,120" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Sheet1" Text="Lazada" />
+                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Double">[Difference]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Double">[DoubleShopee - DoubleLazada]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:ExcelWriteCell Cell="E2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_7" SheetName="Sheet1" Text="[Difference.ToString]" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>
